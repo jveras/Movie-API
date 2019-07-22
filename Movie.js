@@ -18,7 +18,7 @@ $('#Movies').keydown(function (event) {
                                 for (let index = 0; index < data.length; index++) {
                                     html+=`
                                     <div class="col-lg-4 box text-center">
-                                    <img class="img" onclick='selected(${data[index].ID})' src="${data[index].Poster}" >
+                                    <img class="img" onclick='selected(${data[index].id})' src="${data[index].poster}" >
                                     </br>
                                     <h5 class="">${data[index].movie}</h5>
                                     
@@ -51,7 +51,7 @@ $(".btn").click(function(){
                                 for (let index = 0; index < data.length; index++) {
                                     html+=`
                                     <div class="col-lg-4 box text-center">
-                                    <img class="img" onclick='selected(${data[index].ID})' src="${data[index].Poster}" >
+                                    <img class="img" onclick='selected(${data[index].id})' src="${data[index].poster}" >
                                     </br>
                                     <h5 class="">${data[index].movie}</h5>
                                     
@@ -82,7 +82,7 @@ function selected(id){
                                     html+=`
                                     <div class="col-lg-12 box text-center">
                                     <h2 class="">${data.movie}</h2>
-                                    <img class="img" src="${data.Poster}" >
+                                    <img class="img" src="${data.poster}" >
                                     <h5 class="">Type : ${capitalize(data.movieType)}</h5>
                                     <h5 class="">Year : ${data.movieYear}</h5>
                                     </br>
@@ -115,7 +115,7 @@ function back(str){
                                 for (let index = 0; index < data.length; index++) {
                                     html+=`
                                     <div class="col-lg-4 box text-center">
-                                    <img class="img" onclick='selected(${data[index].ID})' src="${data[index].Poster}" >
+                                    <img class="img" onclick='selected(${data[index].id})' src="${data[index].poster}" >
                                     </br>
                                     <h5 class="">${data[index].movie}</h5>
                                     
